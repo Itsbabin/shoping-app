@@ -1,0 +1,259 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(78, 78, 78);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(38, 37, 37);
+}
+.navbar{
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  background-color: rgb(125, 124, 131);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  border-bottom: 8px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+nav > a {
+  border-bottom: 2px double rgb(70, 70, 72);
+  border-left: 2px double rgb(52, 51, 53);
+  border-bottom: 2px double rgb(63, 63, 65);
+  padding: 10px;
+  border-radius: 15px;
+  font-size: large;
+  margin-right: 20px;
+}
+ul{
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+li:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+li{
+  border: 2px solid rgb(125, 124, 131) ;
+  padding: 3px 5px;
+  transition: border-bottom 0.3s;
+}
+a{
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 90px;
+  background-color: rgb(75, 75, 105);
+  
+}
+
+.login-box {
+  
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(43, 42, 42, 0.342);
+  box-shadow: 0px 0px 30px 30px rgba(1, 1, 13, 0.363);
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+}
+
+.login-box label {
+  display: block;
+  margin: 15px 0px 5px 0px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+  outline: none;
+  border: none;
+  color: rgb(253, 253, 255);
+  background-color:  rgba(61, 59, 59, 0.388);
+  border-bottom: 2px solid rgb(21, 21, 21);;
+  direction: none;
+  border-radius: 5px;
+}
+
+.login-box button {
+  width: 50%;
+  padding: 10px;
+  background-color: rgba(40, 41, 62, 0.753);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.login-box button:hover {
+  background-color:rgb(45, 45, 45);
+}
+
+/* .login-box input[type="text"]:active{
+  background-color: red;
+} */
+.login-box input::placeholder{
+  color: rgba(255, 246, 246, 0.493);
+}
+.login-box p{
+  padding: 20px 0px 5px 5px;
+  font-size: small;
+  cursor: pointer;
+}
+
+
+.note {
+  width: 400px;
+  height: 60vh;
+  padding-top: 20px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: aliceblue;
+  border-radius: 10px;
+  background:url("https://images.unsplash.com/photo-1505322022379-7c3353ee6291?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0MzQwNDZ8MHwxfHNlYXJjaHwyfHxuaWdodHxlbnwwfHx8fDE2ODc1NTI3MzZ8MA&ixlib=rb-4.0.3&q=80&w=1080");
+  background-repeat: no-repeat;
+  background-size: 100%,200%;
+  box-shadow: 0px 0px 30px 30px rgba(112, 112, 244, 0.121);
+  
+}
+
+.note label {
+  margin: 1px 25px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.5rem;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+.no1{
+  margin-left: 25px;
+}
+.note textarea {
+  width: 85%;
+  padding: 5px;
+  margin: auto; 
+  margin: 5px 25px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  background-color: rgba(255, 255, 255, 0.075);
+  color: rgba(255, 255, 255, 0.696);
+  font-size: medium;
+}
+.no1 input[type="text"]{
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid black;
+  background-color:  rgba(255, 255, 255, 0.103);
+  color: rgba(230, 230, 240, 0.696);
+}
+.note textarea::placeholder{
+  color: rgba(255, 255, 255, 0.701);
+}
+div >input[type="text"]::placeholder{
+  color: rgba(246, 241, 241, 0.701);
+  
+}
+.note h1{
+  margin: 30px auto;
+}
+.note textarea {
+  resize: vertical;
+  margin: 0px auto; 
+}
+
+.note button{
+  display: block;
+  width: 40%;
+  padding: 10px;
+  background-color: #80758b72;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0px auto; 
+}
+
+.note input[type="submit"]:hover {
+  background-color: #5f576772;
+} 
+  @media screen and (max-width : 480px ) and (min-width : 300px) {
+    body {
+       margin-top: 120px;
+       padding-top:50px;
+    }
+    .login-box {
+      width: 200px;
+      padding: 10px;
+    }
+    .note {
+      width: 250px;
+    }
+  }
+.Notecard{
+  margin: 10px;
+  width: 170px;
+  height: 170px;
+  padding: 10px;
+  background-color: #80758b72;
+  overflow-y: scroll;
+  border-radius: 10px;
+  color: #fff;
+  word-wrap: break-word;
+}
+.Notecard > div{
+  margin: 5px;
+  padding: 5px;
+}
+.Ntitle{
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+svg{
+  height: 24px;
+  cursor: pointer;
+  color:#fff;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+h2{
+  color: #fff;
+  text-decoration-line: underline;
+}
