@@ -16,7 +16,7 @@ export default function Candlestick(props) {
          <div className="candle" style={
             {'backgroundColor' : `${close>open?"green":"red"}`,
              'height': `${ 400*lenth/highestprice}px`,
-             'marginTop': `${400/highestprice*(cont.topprice-which)}px`}}></div>
+             'marginTop': `${400/highestprice*(cont.topprice-which)}px`}}></div> 
          <div className="candle2" style={
             {'backgroundColor' : `${close>open?"green":"red"}`,
             'height': `${ 400*lenth/highestprice}px`}}></div>
